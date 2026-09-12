@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004aad;
+  color: white;
+  padding: 15px 40px;
+}
+.notice-bar{
+  border: 2px solid white;
+  background: rgb(235, 152, 0);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 38px;
+  font-size: 14px;
+}
+.notice-label{
+  background: #ff000d;
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.notice-track{
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* सूचना पटल */
+.notice-text{
+
+  display: inline-block;
+  padding-left: 100%;
+  animation: slide 25s linear infinite;
+}
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.notice-bar:hover .notice-text{
+  animation-play-state: paused;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: orange;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+table{
+    margin: auto;
+    th{
+        text-align: center;
+        border: 1px solid rgb(248, 1, 1);
+}}
+td{
+    text-align: center;
+    border:1px solid green;
+}
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+.aavasyak-jankari{
+  margin: 5px;
+  padding: 0;
+  font-size: 14px;
+  font: optional:bold;
+  background-color: rgb(226, 185, 107);
+  height: :autofill;
+}
+
